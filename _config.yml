@@ -2,10 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+title: # the website title (if blank, full name will be used instead)
+first_name: 
+middle_name:
+last_name:
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -150,13 +150,13 @@ newsletter:
 
 collections:
   books:
-    output: true
+    output: false
   news:
     defaults:
       layout: post
-    output: true
+    output: false
   projects:
-    output: true
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -197,6 +197,19 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - _includes/news.liquid
+  - _includes/repository/
+  - _pages/repositories.md
+  - bibliography/
+  - _pages/publications.md
+  - _pages/dropdown.md
+  - _pages/teaching.md
+  - _pages/cv.md
+  - _pages/profiles.md
+  - _posts/*
+  - _projects/*
+  - _pages/blog.md
+  - _pages/projects.md
 keep_files:
   - CNAME
   - .nojekyll
